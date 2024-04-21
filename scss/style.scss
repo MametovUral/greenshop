@@ -1,0 +1,22 @@
+@import "./base";
+@import "./fonts";
+@import "./colors";
+@import "./container";
+
+body {
+  font-family: "Cera Pro";
+  background-color: var(--g-white);
+}
+
+.btn {
+  border-radius: 6px;
+  background-color: var(--g-green);
+  color: var(--g-white);
+  font-size: 16px;
+  font-weight: 500;
+}
+// @media only screen and (max-width: 1024px) {
+
+// }
+
+@import "./parts/nav";
