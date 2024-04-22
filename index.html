@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="wrapper container">
-      <header>
+      <header class="header">
         <div class="header__head">
           <nav class="nav">
             <div class="nav__logo">
@@ -38,9 +38,111 @@
           </nav>
         </div>
         <div class="header__body">
-            
+          <div class="header__body-wrapper">
+            <div class="wrapper-title">
+              <h6>Welcome to GreenShop</h6>
+              <h1>Let’s Make a Better <span>Planet</span></h1>
+              <p>
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants. Use our plants to create an unique Urban Jungle.
+                Order your favorite plants!
+              </p>
+              <button class="btn">SHOP NOW</button>
+            </div>
+            <div class="wrapper-imgs">
+              <div class="wrapper-imgs__item">
+                <img src="./assets/imgs/G-header-all.png" alt="g-all" />
+              </div>
+            </div>
+          </div>
+          <div class="header__body-dots">
+            <ul class="slider__dots">
+              <li class="slider__dots-dot"></li>
+              <li class="slider__dots-dot active"></li>
+              <li class="slider__dots-dot"></li>
+            </ul>
+          </div>
         </div>
       </header>
+      <section class="main">
+        <div class="main__category">
+          <aside class="main__category-control">
+            <div class="filter">
+              <div class="filter-category category">
+                <h6 class="category-title">Categories</h6>
+                <ul class="category__list">
+                  <li class="category__list-item active">
+                    <a href="#">House Plants </a><span>(33)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Potter Plants </a><span>(12)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Seeds </a><span>(65)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Small Plants </a><span>(39)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Big Plants </a><span>(23)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Succulents </a><span>(17)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Trerrariums </a><span>(19)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Gardening </a><span>(13)</span>
+                  </li>
+                  <li class="category__list-item">
+                    <a href="#">Accessories </a><span>(18)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter-range category">
+                <h6 class="category-title">Price Range</h6>
+                <div class="range-control">
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input
+                      type="range"
+                      class="range-min"
+                      min="39"
+                      max="1500"
+                      value="39"
+                      step="10"
+                    />
+                    <input
+                      type="range"
+                      class="range-max"
+                      min="39"
+                      max="1500"
+                      value="1230"
+                      step="10"
+                    />
+                  </div>
+                  <div class="price-input">
+                    <h6>Price:</h6>
+                    <div class="field">
+                      <input type="number" class="input-min" value="39" />
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                      <input type="number" class="input-max" value="1230" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="main__category-content"></div>
+        </div>
+      </section>
     </div>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
