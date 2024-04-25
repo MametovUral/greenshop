@@ -1,6 +1,6 @@
 .header {
   &__body {
-    display: none;
+    // display: none;
     width: 100%;
     height: 500px;
     background-color: var(--g-bg-secondary);
@@ -68,6 +68,41 @@
           background-color: #b8d3bd;
           &.active {
             background-color: var(--g-green);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 919px) {
+  .header {
+    &__body {
+      &-wrapper {
+        .wrapper-imgs {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    &__body {
+      min-height: 400px;
+      &-wrapper {
+        .wrapper-title {
+          text-align: center;
+          h6 {
+            font-size: 12px;
+          }
+          h1 {
+            font-size: 50px;
+            line-height: 50px;
+          }
+          p {
+            font-size: 12px;
           }
         }
       }

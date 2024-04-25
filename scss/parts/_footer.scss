@@ -7,7 +7,6 @@
       display: flex;
       .features-left {
         display: flex;
-        
         gap: 27px;
         &__card {
           width: 239px;
@@ -100,6 +99,7 @@
       width: 80%;
       display: flex;
       justify-content: space-between;
+      gap: 15px;
       padding: 33px 23px;
       .footer-col {
         &__spoiler {
@@ -152,6 +152,71 @@
       color: #3d3d3d;
       font-size: 14px;
       font-weight: 400;
+    }
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .footer {
+    &__top {
+      &-features {
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        .features-left {
+          justify-content: space-between;
+          &__card {
+            width: 100%;
+          }
+        }
+        .features-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 500px;
+          text-align: center;
+          .enter-email {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 960px) {
+  .footer {
+    &__top {
+      &-socials {
+        justify-content: center;
+        gap: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 782px) {
+  .footer {
+    &__top {
+      &-socials {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .footer {
+    &__top {
+      &-main {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 25px;
+        .footer-col {
+          &__list {
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }
